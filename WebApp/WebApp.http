@@ -1,6 +1,9 @@
-@WebApp_HostAddress = http://localhost:5034
+@WebApp_HostAddress = https://api.openweathermap.org/data/2.5/weather
+@API_Key = 43477083eaa008c656ec528f72a5e9bb
+@lat = -23.31243005809174
+@lon = -51.16405126795761
 
-GET {{WebApp_HostAddress}}/weatherforecast/
+GET {{WebApp_HostAddress}}?lat={{lat}}&lon={{lon}}&appid={{API_Key}}
 Accept: application/json
-
+  
 ###
