@@ -21,7 +21,7 @@ namespace WebApp.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public async Task<WeatherForecast?> Get()
         {
-            var API_Key = "43477083eaa008c656ec528f72a5e9bb";
+            var API_Key = "";
             var lat = "-23.31243005809174";
             var lon = "-51.16405126795761";
             try
