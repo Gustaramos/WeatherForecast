@@ -6,7 +6,18 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "lat",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lon",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "WebApp.Dto.WeatherForecast",

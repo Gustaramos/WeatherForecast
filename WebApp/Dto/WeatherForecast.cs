@@ -4,16 +4,8 @@ namespace WebApp.Dto
 {
     public class WeatherForecast
     {
-        //public Coordinate Coord { get; set; } = new();
-        //public string Base { get; set; } = string.Empty;
-        //public Sys Sys { get; set; } = new();
-        //public Wind Wind { get; set; } = new();
-        //public int Visibility { get; set; }
-        //public DateTime Timezone { get; set; }
-        //public int Id { get; set; }
-        //public int Cod { get; set; }
 
-        public IEnumerable<Weather> Weather { get; set; } = Enumerable.Empty<Weather>();
+        public ICollection<Weather> Weathers { get; set; } = new List<Weather>();
         public Main Main { get; set; } = new();        
         public DateTime Dt { get; set; }
         public string Name { get; set; } = string.Empty;
